@@ -3,7 +3,7 @@ import { DatePipeExampleComponent } from '../app/components/date-pipe-example/da
 
 export const routes: Routes = [
     {
-        path: 'datepipe-example',
+        path: 'datepipe',
         component: DatePipeExampleComponent
     }
 ];
