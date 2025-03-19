@@ -1,1 +1,35 @@
-<p>date-pipe-example works!</p>
+<section class="container">
+    <header>
+        <h1>Welcome to Angular Date pipe examples</h1>
+      </header>
+      <article>
+        <section>
+            <h4>Current date in Default format</h4>
+            <p>{{ currentDate}}</p>
+        </section>  
+        <section>
+            <h4>Current date with <i>date</i> pipe</h4>
+            <p>{{ currentDate | date }}</p>
+        </section>  
+        <section>
+            <h4>Current date with <i>date</i> pipe and <i>short</i> format</h4>
+            <p>{{ currentDate | date: 'short'}}</p>
+        </section>  
+        <section>
+            <h4>Current date with <i>date</i> pipe and <i>mediumTime</i> format</h4>
+            <p>{{ currentDate | date: 'mediumTime'}}</p>
+        </section> 
+        <section>
+            <h4>Current date with <i>date</i> pipe and <i>custom</i> format</h4>
+            <p>{{ currentDate | date: 'yyyy-MM-dd HH:mm:ss'}}</p>
+        </section> 
+        <section>
+            <h4>Current date with <i>date</i> pipe and <i>medium</i> format and <i>time</i> zone</h4>
+            <p>{{ currentDate | date: 'medium':'IST' }}</p>
+        </section> 
+        <section>
+            <h4>Current date with <i>date</i> pipe and <i>medium</i> format and <i>time zone</i> and <i>locale</i></h4>
+            <p>{{ currentDate | date: 'medium':'GMT':'en-GB' }}</p>
+        </section> 
+      </article>
+</section>
